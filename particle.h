@@ -25,8 +25,6 @@ class Particle{
     Particle(int numParticles);
     ~Particle();
 
-
-
     void generateParticles(real minX, real maxX, real minY, real maxY, 
         real Temperature, int generateMode);
 

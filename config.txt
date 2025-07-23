@@ -1,0 +1,3 @@
+particle_num int 100
+domain_size float 10.0
+temperature float 1.5
