@@ -200,4 +200,4 @@ CMakeFiles/QSP.dir/main.cpp.o: /home/wbc/share1/codeC++/main.cpp \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h
+ /usr/include/c++/11/bits/erase_if.h /home/wbc/share1/codeC++/gpuConfig.h

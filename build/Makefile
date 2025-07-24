@@ -129,6 +129,30 @@ QSP/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/QSP.dir/build.make CMakeFiles/QSP.dir/build
 .PHONY : QSP/fast
 
+gpuConfig.o: gpuConfig.cpp.o
+.PHONY : gpuConfig.o
+
+# target to build an object file
+gpuConfig.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QSP.dir/build.make CMakeFiles/QSP.dir/gpuConfig.cpp.o
+.PHONY : gpuConfig.cpp.o
+
+gpuConfig.i: gpuConfig.cpp.i
+.PHONY : gpuConfig.i
+
+# target to preprocess a source file
+gpuConfig.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QSP.dir/build.make CMakeFiles/QSP.dir/gpuConfig.cpp.i
+.PHONY : gpuConfig.cpp.i
+
+gpuConfig.s: gpuConfig.cpp.s
+.PHONY : gpuConfig.s
+
+# target to generate assembly for a file
+gpuConfig.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QSP.dir/build.make CMakeFiles/QSP.dir/gpuConfig.cpp.s
+.PHONY : gpuConfig.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -210,6 +234,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... QSP"
+	@echo "... gpuConfig.o"
+	@echo "... gpuConfig.i"
+	@echo "... gpuConfig.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

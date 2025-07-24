@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/QSP.dir/gpuConfig.cpp.o"
+  "CMakeFiles/QSP.dir/gpuConfig.cpp.o.d"
   "CMakeFiles/QSP.dir/main.cpp.o"
   "CMakeFiles/QSP.dir/main.cpp.o.d"
   "CMakeFiles/QSP.dir/parameters.cpp.o"

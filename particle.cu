@@ -12,7 +12,6 @@ inline void checkCudaError(cudaError_t err, const char* file, int line) {
     }
 }
 
-
 void Particle::allocateDeviceMemory(){
     auto pointersReal=Particle::getDeviceRealPointers();
     std::apply([this](auto&&... ptrs){
