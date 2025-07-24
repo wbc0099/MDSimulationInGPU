@@ -1,0 +1,3 @@
+/home/wbc/share1/codeC++/build/CMakeFiles/QSP.dir
+/home/wbc/share1/codeC++/build/CMakeFiles/edit_cache.dir
+/home/wbc/share1/codeC++/build/CMakeFiles/rebuild_cache.dir
