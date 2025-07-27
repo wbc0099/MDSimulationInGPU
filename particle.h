@@ -5,12 +5,14 @@
 #include <utility> 
 
 class Particle{
+public:
     using RealPtr = real*;
     using IntPtr = int*;
     RealPtr x,y,fx,fy,kBT,x_updateHL,y_updateHL;
-    IntPtr cell_nx,cell_ny,cell_n,NL,senseNumber;
+    //because NL is a list, we can not alloc memroy to NL with getDeviceIntPointers;
+    IntPtr NL,cell_nx,cell_ny,cell_n,senseNumber;
     int numParticles;
-    curandState* state;
+    curandState* states;
     int blockSize=256;
     int gridSize=(numParticles+255)/256;
 
@@ -19,7 +21,11 @@ class Particle{
     }
 
     auto getDeviceIntPointers(){
-        return std::tie(cell_nx,cell_ny,cell_n,NL,senseNumber);
+        return std::tie(cell_nx,cell_ny,cell_n,senseNumber);
+    }
+
+    auto getDeviceIntListPointers(){
+        return std::tie(NL);
     }
 
     Particle(int numParticles);
@@ -30,6 +36,9 @@ class Particle{
 
     void allocateDeviceMemory();
     void freeDeviceMemory();
-    void copyToHost();  
-    void initState();
+    void copyToHost();
+    void initPosition(int mode, real boxLX, real boxLY, real cellLX, real cellLY);
+    void initRandomStates(int numParticles, unsigned long long seed, dim3 gridSize, dim3 blockSize);
+    void moveAllDataToGPU(int GPUID);
+    void moveAllDataToCPU();
 };
