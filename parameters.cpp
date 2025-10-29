@@ -30,7 +30,9 @@ void Parameters::loadFromFile(const std::string& filename){
 }
 
 float Parameters::getFloat(const std::string& key, float defaultValue){
-    return floatParams.count(key) ? floatParams[key] : defaultValue;
+    float value=floatParams.count(key) ? floatParams[key] : defaultValue;
+    printf("the value of %s is : %f\n", key.c_str(), value);
+    return value;
 }
 
 int Parameters::getInt(const std::string& key, int defaultValue){

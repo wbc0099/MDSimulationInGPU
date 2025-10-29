@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wbc/share1/codeC++
+CMAKE_SOURCE_DIR = /home/wbc/share1/b811/codeC++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wbc/share1/codeC++/build
+CMAKE_BINARY_DIR = /home/wbc/share1/b811/codeC++/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wbc/share1/codeC++/build/CMakeFiles /home/wbc/share1/codeC++/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wbc/share1/b811/codeC++/build/CMakeFiles /home/wbc/share1/b811/codeC++/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wbc/share1/codeC++/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wbc/share1/b811/codeC++/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -152,6 +152,30 @@ gpuConfig.s: gpuConfig.cpp.s
 gpuConfig.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/QSP.dir/build.make CMakeFiles/QSP.dir/gpuConfig.cpp.s
 .PHONY : gpuConfig.cpp.s
+
+grid.o: grid.cpp.o
+.PHONY : grid.o
+
+# target to build an object file
+grid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QSP.dir/build.make CMakeFiles/QSP.dir/grid.cpp.o
+.PHONY : grid.cpp.o
+
+grid.i: grid.cpp.i
+.PHONY : grid.i
+
+# target to preprocess a source file
+grid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QSP.dir/build.make CMakeFiles/QSP.dir/grid.cpp.i
+.PHONY : grid.cpp.i
+
+grid.s: grid.cpp.s
+.PHONY : grid.s
+
+# target to generate assembly for a file
+grid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QSP.dir/build.make CMakeFiles/QSP.dir/grid.cpp.s
+.PHONY : grid.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -237,6 +261,9 @@ help:
 	@echo "... gpuConfig.o"
 	@echo "... gpuConfig.i"
 	@echo "... gpuConfig.s"
+	@echo "... grid.o"
+	@echo "... grid.i"
+	@echo "... grid.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

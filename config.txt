@@ -1,3 +1,7 @@
 particle_num int 100
 domain_size float 10.0
 temperature float 1.5
+boxLX float 100
+boxLY float 100
+cellLX float 10
+cellLY float 10

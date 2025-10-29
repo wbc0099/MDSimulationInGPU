@@ -74,6 +74,7 @@ Particle::~Particle(){
 
 void Particle::moveAllDataToCPU(){
     auto pointersReal=Particle::getDeviceIntListPointers();
+    //printf("cudaCpuDeviceId is : %d\n", cudaCpuDeviceId); //every device can only have one host(cpu)
     std::apply([this](auto&&... ptrs){
         (CHECK_CUDA(cudaMemPrefetchAsync(ptrs, numParticles*sizeof(real), cudaCpuDeviceId)), ...);
     }, pointersReal);

@@ -1,4 +1,4 @@
-CMakeFiles/QSP.dir/particle.cu.o : /home/wbc/share1/codeC++/particle.cu \
+CMakeFiles/QSP.dir/particle.cu.o : /home/wbc/share1/b811/codeC++/particle.cu \
     /usr/include/stdc-predef.h \
     /usr/local/cuda/include/cuda_runtime.h \
     /usr/local/cuda/include/crt/host_config.h \
@@ -179,8 +179,8 @@ CMakeFiles/QSP.dir/particle.cu.o : /home/wbc/share1/codeC++/particle.cu \
     /usr/include/c++/11/utility \
     /usr/include/c++/11/bits/stl_relops.h \
     /usr/include/c++/11/initializer_list \
-    /home/wbc/share1/codeC++/particle.h \
-    /home/wbc/share1/codeC++/define.h \
+    /home/wbc/share1/b811/codeC++/particle.h \
+    /home/wbc/share1/b811/codeC++/define.h \
     /usr/local/cuda/include/curand_kernel.h \
     /usr/local/cuda/include/nv/target \
     /usr/local/cuda/include/nv/detail/__target_macros \

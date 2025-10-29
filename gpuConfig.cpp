@@ -3,7 +3,7 @@
 #include <vector>
 
 GPUConfig::GPUConfig(int selectID, bool verbose_)
-    : verbose(verbose_)
+    : verbose(verbose_) // initial list, assign the passed verbose to the member variable verbose
 {
     if (selectID == -1) {
         deviceID = autoSelectDevice();

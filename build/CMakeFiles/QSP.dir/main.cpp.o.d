@@ -1,6 +1,6 @@
-CMakeFiles/QSP.dir/main.cpp.o: /home/wbc/share1/codeC++/main.cpp \
- /usr/include/stdc-predef.h /home/wbc/share1/codeC++/particle.h \
- /home/wbc/share1/codeC++/define.h \
+CMakeFiles/QSP.dir/main.cpp.o: /home/wbc/share1/b811/codeC++/main.cpp \
+ /usr/include/stdc-predef.h /home/wbc/share1/b811/codeC++/particle.h \
+ /home/wbc/share1/b811/codeC++/define.h \
  /usr/local/cuda/include/curand_kernel.h \
  /usr/local/cuda/include/nv/target \
  /usr/local/cuda/include/nv/detail/__target_macros \
@@ -132,8 +132,9 @@ CMakeFiles/QSP.dir/main.cpp.o: /home/wbc/share1/codeC++/main.cpp \
  /usr/local/cuda/include/curand_discrete2.h /usr/include/c++/11/tuple \
  /usr/include/c++/11/array /usr/include/c++/11/bits/range_access.h \
  /usr/include/c++/11/bits/uses_allocator.h \
- /usr/include/c++/11/bits/invoke.h /home/wbc/share1/codeC++/parameters.h \
- /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
+ /usr/include/c++/11/bits/invoke.h \
+ /home/wbc/share1/b811/codeC++/parameters.h /usr/include/c++/11/string \
+ /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/memoryfwd.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
@@ -200,4 +201,6 @@ CMakeFiles/QSP.dir/main.cpp.o: /home/wbc/share1/codeC++/main.cpp \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h /home/wbc/share1/codeC++/gpuConfig.h
+ /usr/include/c++/11/bits/erase_if.h \
+ /home/wbc/share1/b811/codeC++/gpuConfig.h \
+ /home/wbc/share1/b811/codeC++/grid.h

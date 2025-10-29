@@ -1,6 +1,6 @@
 CMakeFiles/QSP.dir/parameters.cpp.o: \
- /home/wbc/share1/codeC++/parameters.cpp /usr/include/stdc-predef.h \
- /home/wbc/share1/codeC++/parameters.h /usr/include/c++/11/string \
+ /home/wbc/share1/b811/codeC++/parameters.cpp /usr/include/stdc-predef.h \
+ /home/wbc/share1/b811/codeC++/parameters.h /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -161,4 +161,5 @@ CMakeFiles/QSP.dir/parameters.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/sstream \
- /usr/include/c++/11/bits/sstream.tcc /home/wbc/share1/codeC++/define.h
+ /usr/include/c++/11/bits/sstream.tcc \
+ /home/wbc/share1/b811/codeC++/define.h
