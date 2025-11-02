@@ -1,3 +1,3 @@
-/home/wbc/share1/b811/codeC++/build/CMakeFiles/QSP.dir
-/home/wbc/share1/b811/codeC++/build/CMakeFiles/edit_cache.dir
-/home/wbc/share1/b811/codeC++/build/CMakeFiles/rebuild_cache.dir
+/home/wbc/myproject/quorumsensingparticlesC++/build/CMakeFiles/QSP.dir
+/home/wbc/myproject/quorumsensingparticlesC++/build/CMakeFiles/edit_cache.dir
+/home/wbc/myproject/quorumsensingparticlesC++/build/CMakeFiles/rebuild_cache.dir

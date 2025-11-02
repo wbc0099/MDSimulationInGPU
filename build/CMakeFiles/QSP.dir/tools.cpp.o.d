@@ -1,7 +1,6 @@
-CMakeFiles/QSP.dir/main.cpp.o: \
- /home/wbc/myproject/quorumsensingparticlesC++/main.cpp \
+CMakeFiles/QSP.dir/tools.cpp.o: \
+ /home/wbc/myproject/quorumsensingparticlesC++/tools.cpp \
  /usr/include/stdc-predef.h \
- /home/wbc/myproject/quorumsensingparticlesC++/particle.h \
  /home/wbc/myproject/quorumsensingparticlesC++/define.h \
  /usr/local/cuda/include/cuda_runtime.h \
  /usr/local/cuda/include/crt/host_config.h \
@@ -172,12 +171,8 @@ CMakeFiles/QSP.dir/main.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc \
- /usr/local/cuda/include/curand_kernel.h \
- /usr/local/cuda/include/nv/target \
- /usr/local/cuda/include/nv/detail/__target_macros \
- /usr/local/cuda/include/nv/detail/__preprocessor \
- /usr/include/c++/11/math.h /usr/include/c++/11/cmath /usr/include/math.h \
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/math.h \
+ /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
@@ -199,31 +194,4 @@ CMakeFiles/QSP.dir/main.cpp.o: \
  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
- /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /usr/local/cuda/include/curand.h \
- /usr/local/cuda/include/curand_discrete.h \
- /usr/local/cuda/include/curand_precalc.h \
- /usr/local/cuda/include/curand_mrg32k3a.h \
- /usr/local/cuda/include/curand_mtgp32_kernel.h \
- /usr/include/c++/11/stdlib.h /usr/include/memory.h /usr/include/string.h \
- /usr/include/strings.h /usr/local/cuda/include/curand_mtgp32.h \
- /usr/local/cuda/include/curand_philox4x32_x.h \
- /usr/local/cuda/include/curand_globals.h \
- /usr/local/cuda/include/curand_uniform.h \
- /usr/local/cuda/include/curand_normal.h \
- /usr/local/cuda/include/curand_normal_static.h \
- /usr/local/cuda/include/curand_lognormal.h \
- /usr/local/cuda/include/curand_poisson.h \
- /usr/local/cuda/include/curand_discrete2.h /usr/include/c++/11/tuple \
- /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
- /usr/include/c++/11/bits/invoke.h \
- /home/wbc/myproject/quorumsensingparticlesC++/parameters.h \
- /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
- /usr/include/c++/11/ext/aligned_buffer.h \
- /usr/include/c++/11/bits/node_handle.h \
- /usr/include/c++/11/bits/stl_map.h \
- /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h \
- /home/wbc/myproject/quorumsensingparticlesC++/gpuConfig.h \
- /home/wbc/myproject/quorumsensingparticlesC++/grid.h \
- /home/wbc/myproject/quorumsensingparticlesC++/tools.h
+ /usr/include/c++/11/tr1/riemann_zeta.tcc

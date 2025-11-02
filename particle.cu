@@ -1,19 +1,11 @@
+#include "define.h"
 #include "particle.h"
 #include "cuda_runtime.h"
 #include <iostream>
 #include <tuple>
 #include <utility> 
 #include <random>
-
-#define CHECK_CUDA(err) checkCudaError(err, __FILE__, __LINE__)
-
-inline void checkCudaError(cudaError_t err, const char* file, int line) {
-    if (err != cudaSuccess) {
-        std::cerr << "CUDA error at " << file << ":" << line 
-                  << ": " << cudaGetErrorString(err) << std::endl;
-        exit(EXIT_FAILURE);
-    }
-}
+#include "tools.h"
 
 void Particle::allocateDeviceMemory(){
     auto pointersReal=Particle::getDeviceRealPointers();
@@ -103,28 +95,65 @@ void Particle::moveAllDataToGPU(int GPUID){
     }, pointersIntList);
 }
 
-// void Particle::initPosition(int mode, real boxLX, real boxLY, real cellLX, real cellLY){
-//     std::default_random_engine e;
-//     std::uniform_real_distribution <double> u(0.0,1.0);
-//     e.seed(time(0));
-//     real x0,y0,dx,dy;
-//     int cellX,cellY,AroundCellNX,AroundCellNY,AroundCellN;
-//     int wrongFlag=0;
+void Particle::initPosition(int* xAll, int* yAll, int mode, real boxLX, real boxLY, real cellLX, real cellLY, int cellXN, int cellYN, real r0){
+    std::default_random_engine e;
+    std::uniform_real_distribution <double> u(0.0,1.0);
+    e.seed(time(0));
+    real x0,y0,dr;
+    int particleCellXN, particleCellYN, AroundCellXN,AroundCellYN,AroundCellN;
+    int wrongFlag=0;
+    int cellList[numParticles*cellXN*cellYN]={0};
+    int cellListOffset[cellXN*cellYN]={0};
 
-//     for(int i=0;i<numParticles;i++){
-//         while(1){
-//             x0=u(e)*boxLX;
-//             y0=u(e)*boxLY;
-//             wrongFlag=0;
-//             cellX=std::floor(x0/cellLX);
-//             cellY=std::floor(y0/cellLY);
-//             for(int x=-1;x<=1;x++){
-//                cellX=0;//============================ test =======================================
-                
-//             }
-//         }
-//     }
-// }
+    for(int i=0;i<numParticles;i++){
+        while(1){
+            x0=u(e)*boxLX;
+            y0=u(e)*boxLY;
+            wrongFlag=0;
+            particleCellXN=std::floor(x0/cellLX);
+            particleCellYN=std::floor(y0/cellLY);
+            for(int x=-1;x<=1;x++){
+                for(int y=-1;y<=1;y++){
+                    if(particleCellXN+x==-1){
+                        AroundCellXN=cellXN-1;
+                    }else if(particleCellXN+x==cellXN){
+                        AroundCellXN=0;
+                    }else{
+                        AroundCellXN=particleCellXN+x;
+                    }
+                    if(particleCellYN+y==-1){
+                        AroundCellYN=cellYN-1;
+                    }else if(particleCellYN+x==cellYN){
+                        AroundCellYN=0;
+                    }else{
+                        AroundCellYN=particleCellYN+y;
+                    }
+                    AroundCellN=AroundCellXN+AroundCellYN*cellXN;
+                    for(int j=0; j<cellListOffset[AroundCellN]; j++){
+                        dr=distancePBC(x0, y0, xAll[cellList[j]], yAll[cellList[j]],boxLX,boxLY);
+                        if (dr<r0){
+                            wrongFlag=1;
+                            break;
+                        }
+                    }
+                    if(wrongFlag==1){
+                        break;
+                    }
+                }
+                if(wrongFlag==1){
+                    break;
+                }
+            }
+            if(wrongFlag==0){
+                break;
+            }else continue;
+        }
+        xAll[i]=x0;
+        yAll[i]=y0;
+        cellList[(particleCellXN+particleCellYN*cellXN)*numParticles+cellListOffset[particleCellXN+particleCellYN*cellXN]]=i;
+        cellListOffset[particleCellXN+particleCellYN*cellXN]++;
+    }
+}
 
 
 // void Particle::initState(){

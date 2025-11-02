@@ -1,4 +1,4 @@
-CMakeFiles/QSP.dir/particle.cu.o : /home/wbc/myproject/quorumsensingparticlesC++/particle.cu \
+CMakeFiles/QSP.dir/grid.cu.o : /home/wbc/myproject/quorumsensingparticlesC++/grid.cu \
     /usr/include/stdc-predef.h \
     /usr/local/cuda/include/cuda_runtime.h \
     /usr/local/cuda/include/crt/host_config.h \
@@ -179,6 +179,7 @@ CMakeFiles/QSP.dir/particle.cu.o : /home/wbc/myproject/quorumsensingparticlesC++
     /usr/include/c++/11/utility \
     /usr/include/c++/11/bits/stl_relops.h \
     /usr/include/c++/11/initializer_list \
+    /home/wbc/myproject/quorumsensingparticlesC++/grid.h \
     /home/wbc/myproject/quorumsensingparticlesC++/define.h \
     /usr/include/c++/11/iostream \
     /usr/include/c++/11/ostream \
@@ -270,44 +271,4 @@ CMakeFiles/QSP.dir/particle.cu.o : /home/wbc/myproject/quorumsensingparticlesC++
     /usr/include/c++/11/bits/basic_ios.tcc \
     /usr/include/c++/11/bits/ostream.tcc \
     /usr/include/c++/11/istream \
-    /usr/include/c++/11/bits/istream.tcc \
-    /home/wbc/myproject/quorumsensingparticlesC++/particle.h \
-    /usr/local/cuda/include/curand_kernel.h \
-    /usr/local/cuda/include/nv/target \
-    /usr/local/cuda/include/nv/detail/__target_macros \
-    /usr/local/cuda/include/nv/detail/__preprocessor \
-    /usr/local/cuda/include/curand.h \
-    /usr/local/cuda/include/curand_discrete.h \
-    /usr/local/cuda/include/curand_precalc.h \
-    /usr/local/cuda/include/curand_mrg32k3a.h \
-    /usr/local/cuda/include/curand_mtgp32_kernel.h \
-    /usr/include/memory.h \
-    /usr/local/cuda/include/curand_mtgp32.h \
-    /usr/local/cuda/include/curand_philox4x32_x.h \
-    /usr/local/cuda/include/curand_globals.h \
-    /usr/local/cuda/include/curand_uniform.h \
-    /usr/local/cuda/include/curand_normal.h \
-    /usr/local/cuda/include/curand_normal_static.h \
-    /usr/local/cuda/include/curand_lognormal.h \
-    /usr/local/cuda/include/curand_poisson.h \
-    /usr/local/cuda/include/curand_discrete2.h \
-    /usr/include/c++/11/tuple \
-    /usr/include/c++/11/array \
-    /usr/include/c++/11/bits/uses_allocator.h \
-    /usr/include/c++/11/bits/invoke.h \
-    /usr/include/c++/11/random \
-    /usr/include/c++/11/bits/random.h \
-    /usr/include/c++/11/vector \
-    /usr/include/c++/11/bits/stl_uninitialized.h \
-    /usr/include/c++/11/bits/stl_vector.h \
-    /usr/include/c++/11/bits/stl_bvector.h \
-    /usr/include/c++/11/bits/vector.tcc \
-    /usr/include/c++/11/bits/uniform_int_dist.h \
-    /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
-    /usr/include/c++/11/bits/random.tcc \
-    /usr/include/c++/11/numeric \
-    /usr/include/c++/11/bits/stl_numeric.h \
-    /usr/include/c++/11/bit \
-    /usr/include/c++/11/pstl/glue_numeric_defs.h \
-    /usr/include/c++/11/pstl/execution_defs.h \
-    /home/wbc/myproject/quorumsensingparticlesC++/tools.h
+    /usr/include/c++/11/bits/istream.tcc

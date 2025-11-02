@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wbc/share1/b811/codeC++
+CMAKE_SOURCE_DIR = /home/wbc/myproject/quorumsensingparticlesC++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wbc/share1/b811/codeC++/build
+CMAKE_BINARY_DIR = /home/wbc/myproject/quorumsensingparticlesC++/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/QSP.dir/clean
 CMakeFiles/QSP.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/QSP.dir/build.make CMakeFiles/QSP.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/QSP.dir/build.make CMakeFiles/QSP.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wbc/share1/b811/codeC++/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target QSP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wbc/myproject/quorumsensingparticlesC++/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target QSP"
 .PHONY : CMakeFiles/QSP.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/QSP.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wbc/share1/b811/codeC++/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wbc/myproject/quorumsensingparticlesC++/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/QSP.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wbc/share1/b811/codeC++/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wbc/myproject/quorumsensingparticlesC++/build/CMakeFiles 0
 .PHONY : CMakeFiles/QSP.dir/rule
 
 # Convenience name for target.

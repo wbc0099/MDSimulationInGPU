@@ -16,7 +16,8 @@ add_executable(QSP
     particle.cu
     parameters.cpp
     gpuConfig.cpp
-    grid.cpp
+    grid.cu
+    tools.cpp
 )
 
 # 现代链接方式（优先尝试）

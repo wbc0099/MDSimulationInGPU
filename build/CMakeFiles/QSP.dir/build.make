@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wbc/share1/b811/codeC++
+CMAKE_SOURCE_DIR = /home/wbc/myproject/quorumsensingparticlesC++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wbc/share1/b811/codeC++/build
+CMAKE_BINARY_DIR = /home/wbc/myproject/quorumsensingparticlesC++/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/QSP.dir/depend.make
@@ -72,22 +72,22 @@ include CMakeFiles/QSP.dir/flags.make
 CMakeFiles/QSP.dir/main.cpp.o: CMakeFiles/QSP.dir/flags.make
 CMakeFiles/QSP.dir/main.cpp.o: ../main.cpp
 CMakeFiles/QSP.dir/main.cpp.o: CMakeFiles/QSP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wbc/share1/b811/codeC++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/QSP.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QSP.dir/main.cpp.o -MF CMakeFiles/QSP.dir/main.cpp.o.d -o CMakeFiles/QSP.dir/main.cpp.o -c /home/wbc/share1/b811/codeC++/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wbc/myproject/quorumsensingparticlesC++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/QSP.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QSP.dir/main.cpp.o -MF CMakeFiles/QSP.dir/main.cpp.o.d -o CMakeFiles/QSP.dir/main.cpp.o -c /home/wbc/myproject/quorumsensingparticlesC++/main.cpp
 
 CMakeFiles/QSP.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QSP.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wbc/share1/b811/codeC++/main.cpp > CMakeFiles/QSP.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wbc/myproject/quorumsensingparticlesC++/main.cpp > CMakeFiles/QSP.dir/main.cpp.i
 
 CMakeFiles/QSP.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QSP.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wbc/share1/b811/codeC++/main.cpp -o CMakeFiles/QSP.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wbc/myproject/quorumsensingparticlesC++/main.cpp -o CMakeFiles/QSP.dir/main.cpp.s
 
 CMakeFiles/QSP.dir/particle.cu.o: CMakeFiles/QSP.dir/flags.make
 CMakeFiles/QSP.dir/particle.cu.o: ../particle.cu
 CMakeFiles/QSP.dir/particle.cu.o: CMakeFiles/QSP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wbc/share1/b811/codeC++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CUDA object CMakeFiles/QSP.dir/particle.cu.o"
-	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/QSP.dir/particle.cu.o -MF CMakeFiles/QSP.dir/particle.cu.o.d -x cu -c /home/wbc/share1/b811/codeC++/particle.cu -o CMakeFiles/QSP.dir/particle.cu.o
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wbc/myproject/quorumsensingparticlesC++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CUDA object CMakeFiles/QSP.dir/particle.cu.o"
+	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/QSP.dir/particle.cu.o -MF CMakeFiles/QSP.dir/particle.cu.o.d -x cu -c /home/wbc/myproject/quorumsensingparticlesC++/particle.cu -o CMakeFiles/QSP.dir/particle.cu.o
 
 CMakeFiles/QSP.dir/particle.cu.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/QSP.dir/particle.cu.i"
@@ -100,44 +100,58 @@ CMakeFiles/QSP.dir/particle.cu.s: cmake_force
 CMakeFiles/QSP.dir/parameters.cpp.o: CMakeFiles/QSP.dir/flags.make
 CMakeFiles/QSP.dir/parameters.cpp.o: ../parameters.cpp
 CMakeFiles/QSP.dir/parameters.cpp.o: CMakeFiles/QSP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wbc/share1/b811/codeC++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/QSP.dir/parameters.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QSP.dir/parameters.cpp.o -MF CMakeFiles/QSP.dir/parameters.cpp.o.d -o CMakeFiles/QSP.dir/parameters.cpp.o -c /home/wbc/share1/b811/codeC++/parameters.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wbc/myproject/quorumsensingparticlesC++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/QSP.dir/parameters.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QSP.dir/parameters.cpp.o -MF CMakeFiles/QSP.dir/parameters.cpp.o.d -o CMakeFiles/QSP.dir/parameters.cpp.o -c /home/wbc/myproject/quorumsensingparticlesC++/parameters.cpp
 
 CMakeFiles/QSP.dir/parameters.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QSP.dir/parameters.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wbc/share1/b811/codeC++/parameters.cpp > CMakeFiles/QSP.dir/parameters.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wbc/myproject/quorumsensingparticlesC++/parameters.cpp > CMakeFiles/QSP.dir/parameters.cpp.i
 
 CMakeFiles/QSP.dir/parameters.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QSP.dir/parameters.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wbc/share1/b811/codeC++/parameters.cpp -o CMakeFiles/QSP.dir/parameters.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wbc/myproject/quorumsensingparticlesC++/parameters.cpp -o CMakeFiles/QSP.dir/parameters.cpp.s
 
 CMakeFiles/QSP.dir/gpuConfig.cpp.o: CMakeFiles/QSP.dir/flags.make
 CMakeFiles/QSP.dir/gpuConfig.cpp.o: ../gpuConfig.cpp
 CMakeFiles/QSP.dir/gpuConfig.cpp.o: CMakeFiles/QSP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wbc/share1/b811/codeC++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/QSP.dir/gpuConfig.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QSP.dir/gpuConfig.cpp.o -MF CMakeFiles/QSP.dir/gpuConfig.cpp.o.d -o CMakeFiles/QSP.dir/gpuConfig.cpp.o -c /home/wbc/share1/b811/codeC++/gpuConfig.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wbc/myproject/quorumsensingparticlesC++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/QSP.dir/gpuConfig.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QSP.dir/gpuConfig.cpp.o -MF CMakeFiles/QSP.dir/gpuConfig.cpp.o.d -o CMakeFiles/QSP.dir/gpuConfig.cpp.o -c /home/wbc/myproject/quorumsensingparticlesC++/gpuConfig.cpp
 
 CMakeFiles/QSP.dir/gpuConfig.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QSP.dir/gpuConfig.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wbc/share1/b811/codeC++/gpuConfig.cpp > CMakeFiles/QSP.dir/gpuConfig.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wbc/myproject/quorumsensingparticlesC++/gpuConfig.cpp > CMakeFiles/QSP.dir/gpuConfig.cpp.i
 
 CMakeFiles/QSP.dir/gpuConfig.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QSP.dir/gpuConfig.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wbc/share1/b811/codeC++/gpuConfig.cpp -o CMakeFiles/QSP.dir/gpuConfig.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wbc/myproject/quorumsensingparticlesC++/gpuConfig.cpp -o CMakeFiles/QSP.dir/gpuConfig.cpp.s
 
-CMakeFiles/QSP.dir/grid.cpp.o: CMakeFiles/QSP.dir/flags.make
-CMakeFiles/QSP.dir/grid.cpp.o: ../grid.cpp
-CMakeFiles/QSP.dir/grid.cpp.o: CMakeFiles/QSP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wbc/share1/b811/codeC++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/QSP.dir/grid.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QSP.dir/grid.cpp.o -MF CMakeFiles/QSP.dir/grid.cpp.o.d -o CMakeFiles/QSP.dir/grid.cpp.o -c /home/wbc/share1/b811/codeC++/grid.cpp
+CMakeFiles/QSP.dir/grid.cu.o: CMakeFiles/QSP.dir/flags.make
+CMakeFiles/QSP.dir/grid.cu.o: ../grid.cu
+CMakeFiles/QSP.dir/grid.cu.o: CMakeFiles/QSP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wbc/myproject/quorumsensingparticlesC++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CUDA object CMakeFiles/QSP.dir/grid.cu.o"
+	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/QSP.dir/grid.cu.o -MF CMakeFiles/QSP.dir/grid.cu.o.d -x cu -c /home/wbc/myproject/quorumsensingparticlesC++/grid.cu -o CMakeFiles/QSP.dir/grid.cu.o
 
-CMakeFiles/QSP.dir/grid.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QSP.dir/grid.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wbc/share1/b811/codeC++/grid.cpp > CMakeFiles/QSP.dir/grid.cpp.i
+CMakeFiles/QSP.dir/grid.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/QSP.dir/grid.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
 
-CMakeFiles/QSP.dir/grid.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QSP.dir/grid.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wbc/share1/b811/codeC++/grid.cpp -o CMakeFiles/QSP.dir/grid.cpp.s
+CMakeFiles/QSP.dir/grid.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/QSP.dir/grid.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
+CMakeFiles/QSP.dir/tools.cpp.o: CMakeFiles/QSP.dir/flags.make
+CMakeFiles/QSP.dir/tools.cpp.o: ../tools.cpp
+CMakeFiles/QSP.dir/tools.cpp.o: CMakeFiles/QSP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wbc/myproject/quorumsensingparticlesC++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/QSP.dir/tools.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QSP.dir/tools.cpp.o -MF CMakeFiles/QSP.dir/tools.cpp.o.d -o CMakeFiles/QSP.dir/tools.cpp.o -c /home/wbc/myproject/quorumsensingparticlesC++/tools.cpp
+
+CMakeFiles/QSP.dir/tools.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QSP.dir/tools.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wbc/myproject/quorumsensingparticlesC++/tools.cpp > CMakeFiles/QSP.dir/tools.cpp.i
+
+CMakeFiles/QSP.dir/tools.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QSP.dir/tools.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wbc/myproject/quorumsensingparticlesC++/tools.cpp -o CMakeFiles/QSP.dir/tools.cpp.s
 
 # Object files for target QSP
 QSP_OBJECTS = \
@@ -145,7 +159,8 @@ QSP_OBJECTS = \
 "CMakeFiles/QSP.dir/particle.cu.o" \
 "CMakeFiles/QSP.dir/parameters.cpp.o" \
 "CMakeFiles/QSP.dir/gpuConfig.cpp.o" \
-"CMakeFiles/QSP.dir/grid.cpp.o"
+"CMakeFiles/QSP.dir/grid.cu.o" \
+"CMakeFiles/QSP.dir/tools.cpp.o"
 
 # External object files for target QSP
 QSP_EXTERNAL_OBJECTS =
@@ -154,12 +169,13 @@ QSP: CMakeFiles/QSP.dir/main.cpp.o
 QSP: CMakeFiles/QSP.dir/particle.cu.o
 QSP: CMakeFiles/QSP.dir/parameters.cpp.o
 QSP: CMakeFiles/QSP.dir/gpuConfig.cpp.o
-QSP: CMakeFiles/QSP.dir/grid.cpp.o
+QSP: CMakeFiles/QSP.dir/grid.cu.o
+QSP: CMakeFiles/QSP.dir/tools.cpp.o
 QSP: CMakeFiles/QSP.dir/build.make
 QSP: /usr/local/cuda/lib64/libcudart.so
 QSP: /usr/local/cuda/lib64/libcurand.so
 QSP: CMakeFiles/QSP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wbc/share1/b811/codeC++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable QSP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wbc/myproject/quorumsensingparticlesC++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable QSP"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/QSP.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -171,6 +187,6 @@ CMakeFiles/QSP.dir/clean:
 .PHONY : CMakeFiles/QSP.dir/clean
 
 CMakeFiles/QSP.dir/depend:
-	cd /home/wbc/share1/b811/codeC++/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wbc/share1/b811/codeC++ /home/wbc/share1/b811/codeC++ /home/wbc/share1/b811/codeC++/build /home/wbc/share1/b811/codeC++/build /home/wbc/share1/b811/codeC++/build/CMakeFiles/QSP.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wbc/myproject/quorumsensingparticlesC++/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wbc/myproject/quorumsensingparticlesC++ /home/wbc/myproject/quorumsensingparticlesC++ /home/wbc/myproject/quorumsensingparticlesC++/build /home/wbc/myproject/quorumsensingparticlesC++/build /home/wbc/myproject/quorumsensingparticlesC++/build/CMakeFiles/QSP.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/QSP.dir/depend
 

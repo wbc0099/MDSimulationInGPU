@@ -5,3 +5,4 @@ boxLX float 100
 boxLY float 100
 cellLX float 10
 cellLY float 10
+maxParticlesPerCell int 20

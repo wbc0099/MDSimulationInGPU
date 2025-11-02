@@ -1,6 +1,7 @@
 CMakeFiles/QSP.dir/gpuConfig.cpp.o: \
- /home/wbc/share1/b811/codeC++/gpuConfig.cpp /usr/include/stdc-predef.h \
- /home/wbc/share1/b811/codeC++/gpuConfig.h \
+ /home/wbc/myproject/quorumsensingparticlesC++/gpuConfig.cpp \
+ /usr/include/stdc-predef.h \
+ /home/wbc/myproject/quorumsensingparticlesC++/gpuConfig.h \
  /usr/local/cuda/include/cuda_runtime.h \
  /usr/local/cuda/include/crt/host_config.h \
  /usr/local/cuda/include/builtin_types.h \
